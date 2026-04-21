@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte interactive</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Carte de l'Ere des Ombres</h1>
+    </header>
+
+    <div id="map-container">
+      <div id="map-world">
+
+        <div class="marker" data-type="city" data-name="Valdris" data-desc="Cité des guerriers du nord" data-x="47" data-y="36">
+          <span class="marker-icon">⚔</span>
+          <span class="marker-label">Valdris</span>
+        </div>
+
+        <div class="marker" data-type="dungeon" data-name="Cryptes d'Orath" data-desc="Ruines maudites enfouies sous la roche" data-x="80" data-y="55">
+          <span class="marker-icon">💀</span>
+          <span class="marker-label">Cryptes d'Orath</span>
+        </div>
+
+        <div class="marker" data-type="nature" data-name="Forêt d'Elmir" data-desc="Forêt ancestrale habitée par les esprits" data-x="25" data-y="50">
+          <span class="marker-icon">🌲</span>
+          <span class="marker-label">Forêt d'Elmir</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="tooltip">
+      <p id="tooltip-name"></p>
+      <p id="tooltip-desc"></p>
+    </div>
+
+    <div id="modal-overlay">
+      <div id="modal">
+        <h2 id="modal-title"></h2>
+        <p id="modal-desc"></p>
+        <button id="modal-close">Fermer</button>
+      </div>
+    </div>
+
+    <div id="zoom-controls">
+      <button id="zoom-in">+</button>
+      <button id="zoom-out">-</button>
+    </div>
+
+    <div id="legend">
+      <p class="legend-title">LEGEND</p>
+      <div class="legend-item">
+        <span>⚔</span>
+        <span>Cité</span>
+      </div>
+    <div class="legend-item">
+        <span>💀</span>
+        <span>Donjon</span>
+    </div>
+    <div class="legend-item">
+      <span>🌲</span>
+      <span>Lieu Naturel</span>
+    </div>
+  </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
